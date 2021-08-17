@@ -17,7 +17,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/add', $parameters);
     }
-
     /**
      * Use this call to add product item images.
      *
@@ -28,7 +27,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/img/add', $parameters);
     }
-
     /**
      * Use this call to add item variations.
      *
@@ -39,7 +37,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/add_variations', $parameters);
     }
-
     /**
      * Use this api to boost multiple items at once.
      *
@@ -50,7 +47,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/boost', $parameters);
     }
-
     /**
      * Use this call to delete a product item.
      *
@@ -61,7 +57,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/delete', $parameters);
     }
-
     /**
      * Use this call to delete a product item image.
      *
@@ -72,7 +67,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/img/delete', $parameters);
     }
-
     /**
      * Use this call to delete item variation.
      *
@@ -83,7 +77,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/delete_variation', $parameters);
     }
-
     /**
      * Use this call to get attributes of product item.
      *
@@ -94,7 +87,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/attributes/get', $parameters);
     }
-
     /**
      * Use this api to get all boosted items.
      *
@@ -105,7 +97,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/get_boosted', $parameters);
     }
-
     /**
      * Use this call to get categories of product item.
      *
@@ -116,7 +107,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/categories/get', $parameters);
     }
-
     /**
      * Use this api to get comment by shopid/itemid/comment_id
      *
@@ -127,7 +117,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/comments/get', $parameters);
     }
-
     /**
      * Use this call to get detail of item.
      *
@@ -138,7 +127,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/get', $parameters);
     }
-
     /**
      * Use this call to get a list of items.
      *
@@ -149,7 +137,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/get', $parameters);
     }
-
     /**
      * Use this api to get ongoing and upcoming promotions.
      *
@@ -160,7 +147,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/promotion/get', $parameters);
     }
-
     /**
      * Use this API to get recommended category ids according to item name.
      *
@@ -171,7 +157,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/categories/get_recommend', $parameters);
     }
-
     /**
      * Use this call to add one item image in assigned position.
      *
@@ -182,7 +167,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/img/insert', $parameters);
     }
-
     /**
      * Use this api to reply comments from buyers in batch.
      *
@@ -193,7 +177,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/comments/reply', $parameters);
     }
-
     /**
      * Only for TW whitelisted shop. Use this API to set the installment tenures of items.
      *
@@ -204,7 +187,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/installment/set', $parameters);
     }
-
     /**
      * Use this call to update a product item.
      *
@@ -215,7 +197,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/update', $parameters);
     }
-
     /**
      * Override and update all the existing images of an item.
      *
@@ -226,7 +207,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/item/img/update', $parameters);
     }
-
     /**
      * Use this call to update item price.
      *
@@ -237,7 +217,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/update_price', $parameters);
     }
-
     /**
      * Update items price in batch.
      *
@@ -248,7 +227,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/update/items_price', $parameters);
     }
-
     /**
      * Use this call to update item stock.
      *
