@@ -259,7 +259,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/update_stock', $parameters);
     }
-
     /**
      * Update items stock in batch.
      *
@@ -270,7 +269,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/update/items_stock', $parameters);
     }
-
     /**
      * Use this call to update item variation price.
      *
@@ -281,7 +279,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/update_variation_price', $parameters);
     }
-
     /**
      * Update variations price in batch.
      *
@@ -292,7 +289,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/update/vars_price', $parameters);
     }
-
     /**
      * Use this call to update item variation stock.
      *
@@ -303,7 +299,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/update_variation_stock', $parameters);
     }
-
     /**
      * Update variations stock in batch.
      *
@@ -314,7 +309,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/update/vars_stock', $parameters);
     }
-
     /**
      * Use this call to unlist or list items in batch.
      *
@@ -325,7 +319,6 @@ class Item extends NodeAbstract
     {
         return $this->post('/api/v1/items/unlist', $parameters);
     }
-
     /**
      * For adding 2-tier variations (Forked).
      *
@@ -335,23 +328,19 @@ class Item extends NodeAbstract
     public function initTierVariation($parameters = []): ResponseData
     {
         return $this->post('api/v1/item/tier_var/init', $parameters);
-    } 
-    
+    }
     public function addTierVariation($parameters = []): ResponseData
     {
         return $this->post('/api/v1/item/tier_var/add', $parameters);
     }
-    
     public function getVariations($parameters = []): ResponseData
     {
         return $this->post('/api/v1/item/tier_var/get', $parameters);
     }
-    
     public function updateTierVariationList($parameters = []): ResponseData
     {
         return $this->post('/api/v1/item/tier_var/update_list', $parameters);
     }
-    
     public function updateTierVariationIndex($parameters = []): ResponseData
     {
         return $this->post('/api/v1/item/tier_var/update', $parameters);
