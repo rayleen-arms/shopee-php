@@ -140,7 +140,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/unsplit', $parameters);
     }
-    
     /**
      * Custom
      */
