@@ -322,5 +322,5 @@ class Item extends NodeAbstract
     public function updateTierVariationIndex($parameters = []): ResponseData
     {
         return $this->post('/api/v1/item/tier_var/update', $parameters);
-    }   
+    }
 }
