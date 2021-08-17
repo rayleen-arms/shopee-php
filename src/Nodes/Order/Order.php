@@ -144,7 +144,7 @@ class Order extends NodeAbstract
     /**
      * Custom
      */
-    public function MyIncome($parameters = []): ResponseData
+    public function myIncome($parameters = []): ResponseData
     {
         return $this->post('/api/v1/orders/income', $parameters);
     }
