@@ -18,7 +18,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/my_income', $parameters);
     }
-
     /**
      * Use this api to get orders' release time and escrow amount.
      *
@@ -29,7 +28,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/get_escrow_detail', $parameters);
     }
-
     /**
      * Use this call to retrieve detailed information of all the fulfill orders(forder) under a single regular order
      * based on ordersn.
@@ -41,7 +39,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/forder/get', $parameters);
     }
-
     /**
      * Use this call to retrieve detailed information about one or more orders based on OrderIDs.
      *
@@ -52,7 +49,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/detail', $parameters);
     }
-
     /**
      * GetOrdersByStatus is the recommended call to use for order management.
      *
@@ -63,7 +59,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/get', $parameters);
     }
-
     /**
      * GetOrdersList is the recommended call to use for order management.
      *
@@ -74,7 +69,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/basics', $parameters);
     }
-
     /**
      * Use this call to accept buyer cancellation.
      *
@@ -85,7 +79,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/buyer_cancellation/accept', $parameters);
     }
-
     /**
      * Use this call to add note for an order.
      *
@@ -96,7 +89,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/note/add', $parameters);
     }
-
     /**
      * Use this call to cancel an order.
      *
@@ -107,7 +99,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/cancel', $parameters);
     }
-
     /**
      * Use this call to reject buyer cancellation.
      *
@@ -118,7 +109,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/buyer_cancellation/reject', $parameters);
     }
-
     /**
      * Use this API to split order into fulfillment orders.
      *
@@ -129,7 +119,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/split', $parameters);
     }
-
     /**
      * Use this API to cancel split order from the seller side.
      *
@@ -140,9 +129,6 @@ class Order extends NodeAbstract
     {
         return $this->post('/api/v1/orders/unsplit', $parameters);
     }
-    /**
-     * Custom
-     */
     public function myIncome($parameters = []): ResponseData
     {
         return $this->post('/api/v1/orders/income', $parameters);
