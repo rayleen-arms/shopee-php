@@ -336,9 +336,6 @@ class Item extends NodeAbstract
     {
         return $this->post('api/v1/item/tier_var/init', $parameters);
     }
-    /**
-     * CUSTOM
-     */
     public function addTierVariation($parameters = []): ResponseData
     {
         return $this->post('/api/v1/item/tier_var/add', $parameters);
